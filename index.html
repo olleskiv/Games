@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div id="input">
+    Введите интервал (мс, 300-5000):
+    <input type="text" id="input_interval" maxlength="4">
+    <input type="button" value="Старт/Стоп" onclick="start_stop()">
+    <div id="output">
+sadsadasda
+    </div>
+</div>
+<p></p>
+    <div id="main">
+    <div class="align" id="top">
+А
+    </div>
+    <div id="empty space"> </div>
+    <div class="align" id="bottom">
+В
+    </div>
+    </div>
+<script>
+    document.getElementsByTagName('input')[0].onkeypress = function(e) {
+        e = e || event;
+        if (e.ctrlKey || e.altKey || e.metaKey) return;
+        var chr = getChar(e);
+        if (chr == null) return;
+        if (chr < '0' || chr > '9') {
+            return false;
+        }
+    }
+    function getChar(event) {
+        if (event.which == null) {
+            if (event.keyCode < 32) return null;
+            return String.fromCharCode(event.keyCode) // IE
+        }
+        if (event.which!=0 && event.charCode!=0) {
+            if (event.which < 32) return null;
+            return String.fromCharCode(event.which)   // остальные
+        }
+        return null; // специальная клавиша
+    }
+    var click=1;
+    function start_stop(){
+        if(!document.getElementById('input_interval').value || document.getElementById('input_interval').value > 5000 || document.getElementById('input_interval').value < 300){
+            document.getElementById('output').innerHTML = 'Введено неверное значение';
+            document.getElementById('output').style.display = 'block';
+            return 0;
+        } else {
+        if(click){
+            time=setInterval(move, document.getElementById('input_interval').value);
+            click=0;
+            document.getElementById('output').style.display = 'none';
+        } else {
+            clearInterval(time);
+            click=1;
+        }}
+
+
+    }
+    function move() {
+        main = document.getElementById('main');
+        console.log(main.offsetLeft);
+        console.log(main.offsetTop);
+        main.style.left = String(Math.floor(Math.random() * (1200 - 0 + 1)) + 0) + "px";
+        main.style.top = String(Math.floor(Math.random() * (435 - 30 + 1)) + 30) + "px";
+        document.getElementById('top').innerHTML = all_letters[Math.floor(Math.random() * (max1 - min1 + 1)) + min1];
+        document.getElementById('bottom').innerHTML = main_latters[Math.floor(Math.random() * (max2 - min1 + 1)) + min1];
+    }
+    var min1 = 0;
+    var max1 = 32;
+    var max2 = 3;
+    var all_letters = ['А','Б','В','Г','Д','Е','Ё','Ж','З','И','Й','К','Л','М','Н','О','П','Р','С','Т','У','Ф','Х','Ц','Ч','Ш','Щ','Ъ','Ы','Ь','Э','Ю','Я'];
+    var main_latters = ['П','В','О','Л'];
+</script>
+</body>
+</html>
+

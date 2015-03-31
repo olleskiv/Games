@@ -1,0 +1,52 @@
+#main {
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif, sans-serif;
+	font-size: 20px;
+	font-weight:bold;
+}
+#top {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    font-size: 600%;
+	padding-bottom: 20px;
+}
+#bottom{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    font-size: 600%;
+}
+#input {
+    padding: 10px 10px 5px 10px;
+    text-align: center;
+    background: linear-gradient(to top, #6C3, #060);
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 18px;
+	color:#FFF;
+}
+body {
+    margin: 0;
+	background-color: #ECECEC;
+}
+#output{
+    display: none;
+    width: 300px;
+    margin: auto;
+    color: red;
+}
+
+#empty space {
+	width: 100px;
+    height: 200px;
+	}
+.align {
+	text-align: center;
+}
+.align {
+	text-align: center;
+}

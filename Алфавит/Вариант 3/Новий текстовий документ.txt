@@ -1,0 +1,4 @@
+['#fefefe','#bfeaff','#81d3f7','#e3f8ff',]
+['#ff909b','#ffbfc6','#ffdee1','#ffe9ec',]
+['#57b846','#98d482','#bde4aa','#dbf1d1']
+['#959595','#acacac','#e1e1e1','#cccccc']

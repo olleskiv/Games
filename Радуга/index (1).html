@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+<div id="input">
+    <div id="language">
+        <span id="ukr" onclick="change_language('ukr')">Укр</span>
+        <span id="rus" onclick="change_language('rus')">Рус</span></div>
+    <div id="full">
+    <div class="div3">
+    <div id="div1"></div>
+    <div class="slider" id="slider_interval"></div>
+    <div id="interval">500</div>
+    </div>
+    <div class="div3">
+    <div id="div2"></div>
+    <div class="slider" id="slider_claps"></div>
+    <div id="percentage_of_claps">0</div>
+    </div>
+    <input type="button" value="Старт/Стоп" onclick="start_stop()" id="button1">
+
+        <audio controls preload>
+            <source src="song.mp3" type="audio/mpeg">
+            Тег audio не поддерживается вашим браузером.
+            <a href="song.mp3">Скачайте музыку</a>.
+        </audio>
+    </div>
+    <div id="clear">
+    </div>
+</div>
+<p></p>
+    <span id="main">
+    </span>
+</body>
+</html>
+

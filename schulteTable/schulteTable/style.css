@@ -1,0 +1,75 @@
+body{
+	background-color: #99a9cc;
+	font-family: Tahoma;
+}
+.global_wrapper{
+
+	margin: 86px auto;
+	min-width: 940px;
+	width: 70%
+
+
+}
+.control_wrapper{
+	margin-right: 20px auto;
+	display: inline-block;
+	float: left;
+
+
+}
+form{
+	display: block;
+	float: left;
+
+}
+.startPause{
+	background-color: #5a86d6;
+  color: white;
+  font-size: 38px;
+  border: 0px;
+  padding: 15px;
+}
+.timer{
+	font-size: 24px;
+	border: 0px;
+	margin: 20px;
+	width: 100px;
+	height: 25px;
+	display: block;
+}
+.reset{
+		margin: 20px;
+	display: block;
+	font-size: 24px;
+	text-align: center;
+	border: 0px;
+	margin-left: 120px;
+	margin-top: -55px;
+}
+.button{
+	min-width: 130px;
+	min-height: 48px;
+}
+.controlPanel{
+	margin: 20px;
+	display: block;
+	font-size: 24px;
+	text-align: center;
+	border: 0px;
+}
+table{
+	border-collapse: collapse;
+	width: 470px;
+	height: 470px;
+	font-size: 24px;
+	background-color: white;
+	text-align: center;
+	margin-left: 15px;
+}
+table td {
+	padding: 20px;
+	border: 1px solid black;	  
+}
+.table{
+	display: inline-block;
+}
